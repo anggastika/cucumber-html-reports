@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 0) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>root project 'BibitAutUI'</td>
+        <td>0</td>
+      <td>17 Jul 2020, 03:04</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">demo.hooks.AndroidDriverHooks.initializeWebdriver()</td>
+              <td>107</td>
+              <td class="duration" data-value="18361401869">18.361</td>
+              <td class="duration" data-value="18361401869">25.107</td>
+              <td class="duration" data-value="1964670000000">32:44.670</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.hooks.AndroidDriverHooks.quitWebdriver(io.cucumber.java.Scenario)</td>
+              <td>107</td>
+              <td class="duration" data-value="7487289719">7.487</td>
+              <td class="duration" data-value="7487289719">1:0.635</td>
+              <td class="duration" data-value="801140000000">13:21.140</td>
+              <td class="failed">88.79%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.checkPerkiraanNilaiInvestasi()</td>
+              <td>1</td>
+              <td class="duration" data-value="4000000">0.004</td>
+              <td class="duration" data-value="4000000">0.004</td>
+              <td class="duration" data-value="4000000">0.004</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.userAnswerAllTheQuestionsInTheRegisterPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="14055000000">14.055</td>
+              <td class="duration" data-value="14055000000">14.055</td>
+              <td class="duration" data-value="14055000000">14.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.userClickCobaAjaDulu()</td>
+              <td>1</td>
+              <td class="duration" data-value="811000000">0.811</td>
+              <td class="duration" data-value="811000000">0.811</td>
+              <td class="duration" data-value="811000000">0.811</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.userClickSimulasikanRekomendasiRobo()</td>
+              <td>1</td>
+              <td class="duration" data-value="3334000000">3.334</td>
+              <td class="duration" data-value="3334000000">3.334</td>
+              <td class="duration" data-value="3334000000">3.334</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.userInputInvestasiAwal()</td>
+              <td>1</td>
+              <td class="duration" data-value="2045000000">2.045</td>
+              <td class="duration" data-value="2045000000">2.045</td>
+              <td class="duration" data-value="2045000000">2.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CobaAjaSteps.userInputInvestasiBulanan()</td>
+              <td>1</td>
+              <td class="duration" data-value="1548000000">1.548</td>
+              <td class="duration" data-value="1548000000">1.548</td>
+              <td class="duration" data-value="1548000000">1.548</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CustomOrderSteps.userClickBeli1()</td>
+              <td>5</td>
+              <td class="duration" data-value="414800000">0.414</td>
+              <td class="duration" data-value="414800000">0.559</td>
+              <td class="duration" data-value="2074000000">2.074</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CustomOrderSteps.userClickCompany()</td>
+              <td>5</td>
+              <td class="duration" data-value="415400000">0.415</td>
+              <td class="duration" data-value="415400000">0.482</td>
+              <td class="duration" data-value="2077000000">2.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.CustomOrderSteps.userClickCustomOrder()</td>
+              <td>5</td>
+              <td class="duration" data-value="1006600000">1.006</td>
+              <td class="duration" data-value="1006600000">1.115</td>
+              <td class="duration" data-value="5033000000">5.033</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userClickGiftcardMenu()</td>
+              <td>1</td>
+              <td class="duration" data-value="1066000000">1.066</td>
+              <td class="duration" data-value="1066000000">1.066</td>
+              <td class="duration" data-value="1066000000">1.066</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userClickLanjutkanPembayaran()</td>
+              <td>1</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userClickPilihDesain()</td>
+              <td>1</td>
+              <td class="duration" data-value="384000000">0.384</td>
+              <td class="duration" data-value="384000000">0.384</td>
+              <td class="duration" data-value="384000000">0.384</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userClickSelanjutnya()</td>
+              <td>1</td>
+              <td class="duration" data-value="535000000">0.535</td>
+              <td class="duration" data-value="535000000">0.535</td>
+              <td class="duration" data-value="535000000">0.535</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userGetGojekPopup()</td>
+              <td>1</td>
+              <td class="duration" data-value="73000000">0.073</td>
+              <td class="duration" data-value="73000000">0.073</td>
+              <td class="duration" data-value="73000000">0.073</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userInputMessage(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1564000000">1.564</td>
+              <td class="duration" data-value="1564000000">1.564</td>
+              <td class="duration" data-value="1564000000">1.564</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userSelectGiftcardTheme(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="885000000">0.885</td>
+              <td class="duration" data-value="885000000">0.885</td>
+              <td class="duration" data-value="885000000">0.885</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userSelectNominal(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="859000000">0.859</td>
+              <td class="duration" data-value="859000000">0.859</td>
+              <td class="duration" data-value="859000000">0.859</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.GiftcardSteps.userSelectThemesOnSlickSlide()</td>
+              <td>1</td>
+              <td class="duration" data-value="469000000">0.469</td>
+              <td class="duration" data-value="469000000">0.469</td>
+              <td class="duration" data-value="469000000">0.469</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.clickButtonTerapkan()</td>
+              <td>2</td>
+              <td class="duration" data-value="161000000">0.161</td>
+              <td class="duration" data-value="161000000">0.322</td>
+              <td class="duration" data-value="322000000">0.322</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.displayAllBuyingTransactionBetweenPastSixMonths()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.displayAllBuyingTransactionBetweenPastThreeMonths()</td>
+              <td>1</td>
+              <td class="duration" data-value="1431000000">1.431</td>
+              <td class="duration" data-value="1431000000">1.431</td>
+              <td class="duration" data-value="1431000000">1.431</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.userChoosePembelianAtTransaction()</td>
+              <td>2</td>
+              <td class="duration" data-value="310500000">0.310</td>
+              <td class="duration" data-value="310500000">0.621</td>
+              <td class="duration" data-value="621000000">0.621</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.userChooseSemuaAtStatus()</td>
+              <td>2</td>
+              <td class="duration" data-value="117000000">0.117</td>
+              <td class="duration" data-value="117000000">0.234</td>
+              <td class="duration" data-value="234000000">0.234</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.userChooseSixMonthsPeriod()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.userChooseThreeMonthsPeriod()</td>
+              <td>1</td>
+              <td class="duration" data-value="267000000">0.267</td>
+              <td class="duration" data-value="267000000">0.267</td>
+              <td class="duration" data-value="267000000">0.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.HistoryFilterSteps.userClickHistoryFilterButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="318500000">0.318</td>
+              <td class="duration" data-value="318500000">0.343</td>
+              <td class="duration" data-value="637000000">0.637</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userBayarViaVA()</td>
+              <td>16</td>
+              <td class="duration" data-value="310250000">0.310</td>
+              <td class="duration" data-value="310250000">0.387</td>
+              <td class="duration" data-value="4964000000">4.964</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userChooseBCA()</td>
+              <td>1</td>
+              <td class="duration" data-value="250000000">0.250</td>
+              <td class="duration" data-value="250000000">0.250</td>
+              <td class="duration" data-value="250000000">0.250</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userChooseBNI()</td>
+              <td>3</td>
+              <td class="duration" data-value="266333333">0.266</td>
+              <td class="duration" data-value="266333333">0.268</td>
+              <td class="duration" data-value="799000000">0.799</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userChooseBRI()</td>
+              <td>3</td>
+              <td class="duration" data-value="264000000">0.264</td>
+              <td class="duration" data-value="264000000">0.285</td>
+              <td class="duration" data-value="792000000">0.792</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userChooseCimbNiaga()</td>
+              <td>3</td>
+              <td class="duration" data-value="273333333">0.273</td>
+              <td class="duration" data-value="273333333">0.282</td>
+              <td class="duration" data-value="820000000">0.820</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userChooseMandiri()</td>
+              <td>3</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickBayar()</td>
+              <td>12</td>
+              <td class="duration" data-value="434250000">0.434</td>
+              <td class="duration" data-value="434250000">2.183</td>
+              <td class="duration" data-value="5211000000">5.211</td>
+              <td class="failed">83.33%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickBayarBank()</td>
+              <td>3</td>
+              <td class="duration" data-value="326000000">0.326</td>
+              <td class="duration" data-value="326000000">0.337</td>
+              <td class="duration" data-value="978000000">0.978</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickBayarLinkAja()</td>
+              <td>2</td>
+              <td class="duration" data-value="2339500000">2.339</td>
+              <td class="duration" data-value="2339500000">2.824</td>
+              <td class="duration" data-value="4679000000">4.679</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickBayarSkrg()</td>
+              <td>28</td>
+              <td class="duration" data-value="509678571">0.509</td>
+              <td class="duration" data-value="509678571">3.044</td>
+              <td class="duration" data-value="14271000000">14.271</td>
+              <td class="failed">92.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickButtonBeli()</td>
+              <td>28</td>
+              <td class="duration" data-value="713214285">0.713</td>
+              <td class="duration" data-value="713214285">2.994</td>
+              <td class="duration" data-value="19970000000">19.970</td>
+              <td class="failed">92.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickInvestasiSekarang()</td>
+              <td>10</td>
+              <td class="duration" data-value="1367300000">1.367</td>
+              <td class="duration" data-value="1367300000">1.559</td>
+              <td class="duration" data-value="13673000000">13.673</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickInvestasiSekarangWithPortofolioOnHomePage(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="7105666666">7.105</td>
+              <td class="duration" data-value="7105666666">7.192</td>
+              <td class="duration" data-value="21317000000">21.317</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickSetuju()</td>
+              <td>28</td>
+              <td class="duration" data-value="513571428">0.513</td>
+              <td class="duration" data-value="513571428">2.954</td>
+              <td class="duration" data-value="14380000000">14.380</td>
+              <td class="failed">92.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userClickVaPermata()</td>
+              <td>3</td>
+              <td class="duration" data-value="286666666">0.286</td>
+              <td class="duration" data-value="286666666">0.326</td>
+              <td class="duration" data-value="860000000">0.860</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userGetGopayPopup()</td>
+              <td>8</td>
+              <td class="duration" data-value="71500000">0.071</td>
+              <td class="duration" data-value="71500000">0.199</td>
+              <td class="duration" data-value="572000000">0.572</td>
+              <td class="failed">75.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userGetListOfTrans()</td>
+              <td>2</td>
+              <td class="duration" data-value="7594500000">7.594</td>
+              <td class="duration" data-value="7594500000">15.088</td>
+              <td class="duration" data-value="15189000000">15.189</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userGetWarningMessage(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="101000000">0.101</td>
+              <td class="duration" data-value="101000000">0.101</td>
+              <td class="duration" data-value="101000000">0.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userInputMinPembelian(java.lang.String)</td>
+              <td>28</td>
+              <td class="duration" data-value="854428571">0.854</td>
+              <td class="duration" data-value="854428571">2.257</td>
+              <td class="duration" data-value="23924000000">23.924</td>
+              <td class="failed">92.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userIsOnLinkAjaPunchoutPageAndContain(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2879500000">2.879</td>
+              <td class="duration" data-value="2879500000">3.206</td>
+              <td class="duration" data-value="5759000000">5.759</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userSelectPaymentMethod(java.lang.String)</td>
+              <td>28</td>
+              <td class="duration" data-value="300821428">0.300</td>
+              <td class="duration" data-value="300821428">2.020</td>
+              <td class="duration" data-value="8423000000">8.423</td>
+              <td class="failed">92.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userWaitForSeconds(int)</td>
+              <td>369</td>
+              <td class="duration" data-value="5824303523">5.824</td>
+              <td class="duration" data-value="5824303523">22.411</td>
+              <td class="duration" data-value="2149168000000">35:49.168</td>
+              <td class="failed">94.85%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.InvestasiSkrgSteps.userWaitForSecondsAndReloadIfBadCon(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="61432000000">1:1.432</td>
+              <td class="duration" data-value="61432000000">1:1.578</td>
+              <td class="duration" data-value="122864000000">2:2.864</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userClickApprove()</td>
+              <td>1</td>
+              <td class="duration" data-value="258000000">0.258</td>
+              <td class="duration" data-value="258000000">0.258</td>
+              <td class="duration" data-value="258000000">0.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userClickJual()</td>
+              <td>1</td>
+              <td class="duration" data-value="307000000">0.307</td>
+              <td class="duration" data-value="307000000">0.307</td>
+              <td class="duration" data-value="307000000">0.307</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userClickJual2()</td>
+              <td>1</td>
+              <td class="duration" data-value="444000000">0.444</td>
+              <td class="duration" data-value="444000000">0.444</td>
+              <td class="duration" data-value="444000000">0.444</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userClickJual3()</td>
+              <td>1</td>
+              <td class="duration" data-value="415000000">0.415</td>
+              <td class="duration" data-value="415000000">0.415</td>
+              <td class="duration" data-value="415000000">0.415</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userClickSayaMengerti()</td>
+              <td>1</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.JualSteps.userInputJumlahPenjualan()</td>
+              <td>1</td>
+              <td class="duration" data-value="910000000">0.910</td>
+              <td class="duration" data-value="910000000">0.910</td>
+              <td class="duration" data-value="910000000">0.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.displaySistemWillTryToMissCallYourPhone()</td>
+              <td>1</td>
+              <td class="duration" data-value="282000000">0.282</td>
+              <td class="duration" data-value="282000000">0.282</td>
+              <td class="duration" data-value="282000000">0.282</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userClickButtonLogin()</td>
+              <td>95</td>
+              <td class="duration" data-value="730642105">0.730</td>
+              <td class="duration" data-value="730642105">1.627</td>
+              <td class="duration" data-value="69411000000">1:9.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userGetErrorMessageContain(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="742000000">0.742</td>
+              <td class="duration" data-value="742000000">0.742</td>
+              <td class="duration" data-value="742000000">0.742</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userGetOtpErrorMessageContain(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="789000000">0.789</td>
+              <td class="duration" data-value="789000000">0.789</td>
+              <td class="duration" data-value="789000000">0.789</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInputWrongOtp(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2357000000">2.357</td>
+              <td class="duration" data-value="2357000000">2.357</td>
+              <td class="duration" data-value="2357000000">2.357</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInputcorrectOTP()</td>
+              <td>93</td>
+              <td class="duration" data-value="2207365591">2.207</td>
+              <td class="duration" data-value="2207365591">3.985</td>
+              <td class="duration" data-value="205285000000">3:25.285</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertCorrectPhoneNumber()</td>
+              <td>3</td>
+              <td class="duration" data-value="2001000000">2.001</td>
+              <td class="duration" data-value="2001000000">2.221</td>
+              <td class="duration" data-value="6003000000">6.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertPhoneNumber(java.lang.String)</td>
+              <td>84</td>
+              <td class="duration" data-value="1974630952">1.974</td>
+              <td class="duration" data-value="1974630952">2.575</td>
+              <td class="duration" data-value="165869000000">2:45.869</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertPhoneNumberAndUsingEmail(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2036000000">2.036</td>
+              <td class="duration" data-value="2036000000">2.036</td>
+              <td class="duration" data-value="2036000000">2.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertPhoneNumberAndUsingMissCall(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1779000000">1.779</td>
+              <td class="duration" data-value="1779000000">1.779</td>
+              <td class="duration" data-value="1779000000">1.779</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertPhoneNumberAndUsingWA(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2018000000">2.018</td>
+              <td class="duration" data-value="2018000000">2.018</td>
+              <td class="duration" data-value="2018000000">2.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userInsertPhoneNumberThatHavePortofolio()</td>
+              <td>3</td>
+              <td class="duration" data-value="2181333333">2.181</td>
+              <td class="duration" data-value="2181333333">2.325</td>
+              <td class="duration" data-value="6544000000">6.544</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userIsOnBibitMainPage()</td>
+              <td>37</td>
+              <td class="duration" data-value="402324324">0.402</td>
+              <td class="duration" data-value="402324324">0.832</td>
+              <td class="duration" data-value="14886000000">14.886</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.LoginSteps.userIsOnBibitScreen()</td>
+              <td>107</td>
+              <td class="duration" data-value="1932009345">1.932</td>
+              <td class="duration" data-value="1932009345">3.765</td>
+              <td class="duration" data-value="206725000000">3:26.725</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userChooseGopayAsMethodPayment()</td>
+              <td>3</td>
+              <td class="duration" data-value="444333333">0.444</td>
+              <td class="duration" data-value="444333333">0.694</td>
+              <td class="duration" data-value="1333000000">1.333</td>
+              <td class="failed">66.67%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userChoosePortofolio()</td>
+              <td>3</td>
+              <td class="duration" data-value="1718333333">1.718</td>
+              <td class="duration" data-value="1718333333">1.756</td>
+              <td class="duration" data-value="5155000000">5.155</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userChoosePortofolioThatStillNotHaveSchedule()</td>
+              <td>1</td>
+              <td class="duration" data-value="1858000000">1.858</td>
+              <td class="duration" data-value="1858000000">1.858</td>
+              <td class="duration" data-value="1858000000">1.858</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userChooseProduct()</td>
+              <td>2</td>
+              <td class="duration" data-value="3216500000">3.216</td>
+              <td class="duration" data-value="3216500000">3.310</td>
+              <td class="duration" data-value="6433000000">6.433</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userClickButtonConfirm()</td>
+              <td>4</td>
+              <td class="duration" data-value="511250000">0.511</td>
+              <td class="duration" data-value="511250000">0.993</td>
+              <td class="duration" data-value="2045000000">2.045</td>
+              <td class="failed">75.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userClickSekarangKamuBisaNabungRutin()</td>
+              <td>4</td>
+              <td class="duration" data-value="9441750000">9.441</td>
+              <td class="duration" data-value="9441750000">12.541</td>
+              <td class="duration" data-value="37767000000">37.767</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userClickTambahPembelianRutin()</td>
+              <td>4</td>
+              <td class="duration" data-value="1068250000">1.068</td>
+              <td class="duration" data-value="1068250000">1.113</td>
+              <td class="duration" data-value="4273000000">4.273</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userInputNilaiInvestasi()</td>
+              <td>4</td>
+              <td class="duration" data-value="2750750000">2.750</td>
+              <td class="duration" data-value="2750750000">3.470</td>
+              <td class="duration" data-value="11003000000">11.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userSeeErrorMessage()</td>
+              <td>2</td>
+              <td class="duration" data-value="570000000">0.570</td>
+              <td class="duration" data-value="570000000">1.140</td>
+              <td class="duration" data-value="1140000000">1.140</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.NabungRutinSteps.userSeeSuccessfullyMakeTheSchedule()</td>
+              <td>1</td>
+              <td class="duration" data-value="15092000000">15.092</td>
+              <td class="duration" data-value="15092000000">15.092</td>
+              <td class="duration" data-value="15092000000">15.092</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.belumAdaPortofolioIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="817000000">0.817</td>
+              <td class="duration" data-value="817000000">0.817</td>
+              <td class="duration" data-value="817000000">0.817</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.jmlYgHarusTerkumpul(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.showErrorMsg(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedNameAccordingToAPIResults()</td>
+              <td>3</td>
+              <td class="duration" data-value="1124000000">1.124</td>
+              <td class="duration" data-value="1124000000">1.447</td>
+              <td class="duration" data-value="3372000000">3.372</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedObligasiValueAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedPasarUangValueAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedReksaNameAtObligasiAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="411000000">0.411</td>
+              <td class="duration" data-value="411000000">0.411</td>
+              <td class="duration" data-value="411000000">0.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedReksaNameAtPasarUangAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="438000000">0.438</td>
+              <td class="duration" data-value="438000000">0.438</td>
+              <td class="duration" data-value="438000000">0.438</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedReksaValueAccordingToAPIResults()</td>
+              <td>3</td>
+              <td class="duration" data-value="85000000">0.085</td>
+              <td class="duration" data-value="85000000">0.091</td>
+              <td class="duration" data-value="255000000">0.255</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedReksadanaValueAtObligasiAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="58000000">0.058</td>
+              <td class="duration" data-value="58000000">0.058</td>
+              <td class="duration" data-value="58000000">0.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.sucessfullyCompareDisplayedReksadanaValueAtPasarUangAccordingToAPIResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="292000000">0.292</td>
+              <td class="duration" data-value="292000000">0.292</td>
+              <td class="duration" data-value="292000000">0.292</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.thePortofolioDataFromUIIsSameWithAPIData()</td>
+              <td>1</td>
+              <td class="duration" data-value="7444000000">7.444</td>
+              <td class="duration" data-value="7444000000">7.444</td>
+              <td class="duration" data-value="7444000000">7.444</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickButtonLanjut()</td>
+              <td>3</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickButtonPortofolio()</td>
+              <td>8</td>
+              <td class="duration" data-value="7159250000">7.159</td>
+              <td class="duration" data-value="7159250000">8.201</td>
+              <td class="duration" data-value="57274000000">57.274</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickButtonTambahPortofolio()</td>
+              <td>3</td>
+              <td class="duration" data-value="486333333">0.486</td>
+              <td class="duration" data-value="486333333">0.526</td>
+              <td class="duration" data-value="1459000000">1.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickObligasi()</td>
+              <td>1</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickPasarUangDetail()</td>
+              <td>1</td>
+              <td class="duration" data-value="363000000">0.363</td>
+              <td class="duration" data-value="363000000">0.363</td>
+              <td class="duration" data-value="363000000">0.363</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickPortofolioPensiun()</td>
+              <td>3</td>
+              <td class="duration" data-value="406666666">0.406</td>
+              <td class="duration" data-value="406666666">0.453</td>
+              <td class="duration" data-value="1220000000">1.220</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userClickTerapkan()</td>
+              <td>7</td>
+              <td class="duration" data-value="6689428571">6.689</td>
+              <td class="duration" data-value="6689428571">15.170</td>
+              <td class="duration" data-value="46826000000">46.826</td>
+              <td class="failed">42.86%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userInputPortofolioName(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="333333">0.000</td>
+              <td class="duration" data-value="333333">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userInputTargetMoney(int)</td>
+              <td>3</td>
+              <td class="duration" data-value="666666">0.000</td>
+              <td class="duration" data-value="666666">0.001</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userSeeOneOrSomePortofoliosIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1073000000">1.073</td>
+              <td class="duration" data-value="1073000000">1.073</td>
+              <td class="duration" data-value="1073000000">1.073</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userSelectInvestmentPurpose(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="duration" data-value="281000000">0.301</td>
+              <td class="duration" data-value="843000000">0.843</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.PortofolioSteps.userSelectPortofolioInvestmentDueDate(int,int)</td>
+              <td>3</td>
+              <td class="duration" data-value="666666">0.000</td>
+              <td class="duration" data-value="666666">0.001</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileBantuanSteps.userClickButtonBantuan()</td>
+              <td>3</td>
+              <td class="duration" data-value="1337333333">1.337</td>
+              <td class="duration" data-value="1337333333">1.768</td>
+              <td class="duration" data-value="4012000000">4.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileBantuanSteps.userClickChatSupport()</td>
+              <td>1</td>
+              <td class="duration" data-value="393000000">0.393</td>
+              <td class="duration" data-value="393000000">0.393</td>
+              <td class="duration" data-value="393000000">0.393</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileBantuanSteps.userClickSupportViaEmail()</td>
+              <td>1</td>
+              <td class="duration" data-value="348000000">0.348</td>
+              <td class="duration" data-value="348000000">0.348</td>
+              <td class="duration" data-value="348000000">0.348</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileBantuanSteps.userClickWa()</td>
+              <td>1</td>
+              <td class="duration" data-value="374000000">0.374</td>
+              <td class="duration" data-value="374000000">0.374</td>
+              <td class="duration" data-value="374000000">0.374</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileBantuanSteps.userRedirectToSupportPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="353000000">0.353</td>
+              <td class="duration" data-value="353000000">0.353</td>
+              <td class="duration" data-value="353000000">0.353</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.belumAdaVoucherIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.showResultArticleContainSaham()</td>
+              <td>1</td>
+              <td class="duration" data-value="84000000">0.084</td>
+              <td class="duration" data-value="84000000">0.084</td>
+              <td class="duration" data-value="84000000">0.084</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.successfullyLogout()</td>
+              <td>1</td>
+              <td class="duration" data-value="2503000000">2.503</td>
+              <td class="duration" data-value="2503000000">2.503</td>
+              <td class="duration" data-value="2503000000">2.503</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.successfullyUseVoucherKodePromo()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickButtonProfile()</td>
+              <td>15</td>
+              <td class="duration" data-value="8497866666">8.497</td>
+              <td class="duration" data-value="8497866666">9.842</td>
+              <td class="duration" data-value="127468000000">2:7.468</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickGunakanVoucher()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickKamusInvestasi()</td>
+              <td>1</td>
+              <td class="duration" data-value="1346000000">1.346</td>
+              <td class="duration" data-value="1346000000">1.346</td>
+              <td class="duration" data-value="1346000000">1.346</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickKodePromo()</td>
+              <td>3</td>
+              <td class="duration" data-value="1454666666">1.454</td>
+              <td class="duration" data-value="1454666666">1.686</td>
+              <td class="duration" data-value="4364000000">4.364</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickLogout()</td>
+              <td>1</td>
+              <td class="duration" data-value="1175000000">1.175</td>
+              <td class="duration" data-value="1175000000">1.175</td>
+              <td class="duration" data-value="1175000000">1.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickVerifikasiKodePromo()</td>
+              <td>3</td>
+              <td class="duration" data-value="899333333">0.899</td>
+              <td class="duration" data-value="899333333">0.956</td>
+              <td class="duration" data-value="2698000000">2.698</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userClickVoucherSaya()</td>
+              <td>2</td>
+              <td class="duration" data-value="1621000000">1.621</td>
+              <td class="duration" data-value="1621000000">1.873</td>
+              <td class="duration" data-value="3242000000">3.242</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userInputInvalidKodePromo()</td>
+              <td>1</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userInputKodePromo()</td>
+              <td>1</td>
+              <td class="duration" data-value="2370000000">2.370</td>
+              <td class="duration" data-value="2370000000">2.370</td>
+              <td class="duration" data-value="2370000000">2.370</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userInputKodePromoAlreadyUsed()</td>
+              <td>1</td>
+              <td class="duration" data-value="2604000000">2.604</td>
+              <td class="duration" data-value="2604000000">2.604</td>
+              <td class="duration" data-value="2604000000">2.604</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userInputSahamInSearchBar()</td>
+              <td>1</td>
+              <td class="duration" data-value="2836000000">2.836</td>
+              <td class="duration" data-value="2836000000">2.836</td>
+              <td class="duration" data-value="2836000000">2.836</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.userSeeAOrSomeVouchers()</td>
+              <td>1</td>
+              <td class="duration" data-value="1399000000">1.399</td>
+              <td class="duration" data-value="1399000000">1.399</td>
+              <td class="duration" data-value="1399000000">1.399</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.voucherSudahDigunakanIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="407000000">0.407</td>
+              <td class="duration" data-value="407000000">0.407</td>
+              <td class="duration" data-value="407000000">0.407</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileMenuSteps.voucherTidakDitemukanIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1617000000">1.617</td>
+              <td class="duration" data-value="1617000000">1.617</td>
+              <td class="duration" data-value="1617000000">1.617</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickBerikanReview()</td>
+              <td>1</td>
+              <td class="duration" data-value="382000000">0.382</td>
+              <td class="duration" data-value="382000000">0.382</td>
+              <td class="duration" data-value="382000000">0.382</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickBerikanSaran()</td>
+              <td>1</td>
+              <td class="duration" data-value="373000000">0.373</td>
+              <td class="duration" data-value="373000000">0.373</td>
+              <td class="duration" data-value="373000000">0.373</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickBibitKeren()</td>
+              <td>1</td>
+              <td class="duration" data-value="339000000">0.339</td>
+              <td class="duration" data-value="339000000">0.339</td>
+              <td class="duration" data-value="339000000">0.339</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickFAQ()</td>
+              <td>1</td>
+              <td class="duration" data-value="1478000000">1.478</td>
+              <td class="duration" data-value="1478000000">1.478</td>
+              <td class="duration" data-value="1478000000">1.478</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickKomunitas()</td>
+              <td>1</td>
+              <td class="duration" data-value="1221000000">1.221</td>
+              <td class="duration" data-value="1221000000">1.221</td>
+              <td class="duration" data-value="1221000000">1.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickKurangOke()</td>
+              <td>1</td>
+              <td class="duration" data-value="346000000">0.346</td>
+              <td class="duration" data-value="346000000">0.346</td>
+              <td class="duration" data-value="346000000">0.346</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickRateBibit()</td>
+              <td>2</td>
+              <td class="duration" data-value="1449000000">1.449</td>
+              <td class="duration" data-value="1449000000">1.757</td>
+              <td class="duration" data-value="2898000000">2.898</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.ProfileSubMenuSteps.userClickStore()</td>
+              <td>1</td>
+              <td class="duration" data-value="2063000000">2.063</td>
+              <td class="duration" data-value="2063000000">2.063</td>
+              <td class="duration" data-value="2063000000">2.063</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.QuiziInvestasiSteps.userClickMulaiKuis()</td>
+              <td>1</td>
+              <td class="duration" data-value="6367000000">6.367</td>
+              <td class="duration" data-value="6367000000">6.367</td>
+              <td class="duration" data-value="6367000000">6.367</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.QuiziInvestasiSteps.userClickQuizApaSihReksaDana()</td>
+              <td>1</td>
+              <td class="duration" data-value="7367000000">7.367</td>
+              <td class="duration" data-value="7367000000">7.367</td>
+              <td class="duration" data-value="7367000000">7.367</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.displayErrorMessage()</td>
+              <td>8</td>
+              <td class="duration" data-value="191750000">0.191</td>
+              <td class="duration" data-value="191750000">0.797</td>
+              <td class="duration" data-value="1534000000">1.534</td>
+              <td class="failed">87.50%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.displayPhoneNumberAlreadyExisted()</td>
+              <td>1</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.displayPhoneNumberWrongPhoneNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="376000000">0.376</td>
+              <td class="duration" data-value="376000000">0.376</td>
+              <td class="duration" data-value="376000000">0.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.displayToManyOTPs()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.insertOTPForFiveTimes()</td>
+              <td>1</td>
+              <td class="duration" data-value="1034000000">1.034</td>
+              <td class="duration" data-value="1034000000">1.034</td>
+              <td class="duration" data-value="1034000000">1.034</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.insertPhoneNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="2876000000">2.876</td>
+              <td class="duration" data-value="2876000000">2.876</td>
+              <td class="duration" data-value="2876000000">2.876</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.insertPhoneNumberRegistered()</td>
+              <td>1</td>
+              <td class="duration" data-value="2728000000">2.728</td>
+              <td class="duration" data-value="2728000000">2.728</td>
+              <td class="duration" data-value="2728000000">2.728</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.insertPhoneNumberWrongPhoneNumberFormat()</td>
+              <td>1</td>
+              <td class="duration" data-value="2084000000">2.084</td>
+              <td class="duration" data-value="2084000000">2.084</td>
+              <td class="duration" data-value="2084000000">2.084</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.successfullyRegisterPhoneNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userAnswerAllTheQuestions()</td>
+              <td>4</td>
+              <td class="duration" data-value="24794250000">24.794</td>
+              <td class="duration" data-value="24794250000">25.205</td>
+              <td class="duration" data-value="99177000000">1:39.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userClickButtonLanjutkanRegistrasiOnHomePage()</td>
+              <td>9</td>
+              <td class="duration" data-value="1591666666">1.591</td>
+              <td class="duration" data-value="1591666666">3.340</td>
+              <td class="duration" data-value="14325000000">14.325</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userClickButtonRegister()</td>
+              <td>4</td>
+              <td class="duration" data-value="708500000">0.708</td>
+              <td class="duration" data-value="708500000">1.015</td>
+              <td class="duration" data-value="2834000000">2.834</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userClickDaftarButton()</td>
+              <td>8</td>
+              <td class="duration" data-value="316875000">0.316</td>
+              <td class="duration" data-value="316875000">0.486</td>
+              <td class="duration" data-value="2535000000">2.535</td>
+              <td class="failed">87.50%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputNamaPemilikRekening(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="1503625000">1.503</td>
+              <td class="duration" data-value="1503625000">2.478</td>
+              <td class="duration" data-value="12029000000">12.029</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputNomorRekeningOnRegisterPage(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="1787375000">1.787</td>
+              <td class="duration" data-value="1787375000">2.158</td>
+              <td class="duration" data-value="14299000000">14.299</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputPendapatanPertahunOnRegisterPage(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="6264000000">6.264</td>
+              <td class="duration" data-value="6264000000">7.102</td>
+              <td class="duration" data-value="50112000000">50.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputPendidikanOnRegisterPage(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="8366125000">8.366</td>
+              <td class="duration" data-value="8366125000">8.553</td>
+              <td class="duration" data-value="66929000000">1:6.929</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputSumberPenghasilanOnRegisterPage(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="2949375000">2.949</td>
+              <td class="duration" data-value="2949375000">3.119</td>
+              <td class="duration" data-value="23595000000">23.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userInputUnregisteredPhoneNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="1780000000">1.780</td>
+              <td class="duration" data-value="1780000000">1.780</td>
+              <td class="duration" data-value="1780000000">1.780</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userNamaBankOnRegisterPage(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="3397375000">3.397</td>
+              <td class="duration" data-value="3397375000">4.223</td>
+              <td class="duration" data-value="27179000000">27.179</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.RegisterSteps.userSignOnRegistrationOnRegisterPage()</td>
+              <td>8</td>
+              <td class="duration" data-value="2537750000">2.537</td>
+              <td class="duration" data-value="2537750000">3.082</td>
+              <td class="duration" data-value="20302000000">20.302</td>
+              <td class="failed">87.50%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.SearchSteps.getSearchResult(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1248000000">1.248</td>
+              <td class="duration" data-value="1248000000">1.248</td>
+              <td class="duration" data-value="1248000000">1.248</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.SearchSteps.userClickLoupIcon()</td>
+              <td>1</td>
+              <td class="duration" data-value="425000000">0.425</td>
+              <td class="duration" data-value="425000000">0.425</td>
+              <td class="duration" data-value="425000000">0.425</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.SearchSteps.userClickSearchBar()</td>
+              <td>1</td>
+              <td class="duration" data-value="868000000">0.868</td>
+              <td class="duration" data-value="868000000">0.868</td>
+              <td class="duration" data-value="868000000">0.868</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.SearchSteps.userInputSearchValue()</td>
+              <td>1</td>
+              <td class="duration" data-value="3731000000">3.731</td>
+              <td class="duration" data-value="3731000000">3.731</td>
+              <td class="duration" data-value="3731000000">3.731</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userClickEducationCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="394000000">0.394</td>
+              <td class="duration" data-value="394000000">0.394</td>
+              <td class="duration" data-value="394000000">0.394</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userClickOneOfTheTipsUntukInTheMainPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="15820000000">15.820</td>
+              <td class="duration" data-value="15820000000">15.820</td>
+              <td class="duration" data-value="15820000000">15.820</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userClickOneOfTheTipsUntukKamuInTheEducationCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="7034000000">7.034</td>
+              <td class="duration" data-value="7034000000">7.034</td>
+              <td class="duration" data-value="7034000000">7.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userClickSeeAllInTheTipsUntukKamuComponent()</td>
+              <td>2</td>
+              <td class="duration" data-value="9097500000">9.097</td>
+              <td class="duration" data-value="9097500000">9.404</td>
+              <td class="duration" data-value="18195000000">18.195</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userSeeListOfTipsUntukKamu()</td>
+              <td>1</td>
+              <td class="duration" data-value="112000000">0.112</td>
+              <td class="duration" data-value="112000000">0.112</td>
+              <td class="duration" data-value="112000000">0.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userSeeListOfTipsUntukKamuCategoriedAsEducation()</td>
+              <td>1</td>
+              <td class="duration" data-value="1739000000">1.739</td>
+              <td class="duration" data-value="1739000000">1.739</td>
+              <td class="duration" data-value="1739000000">1.739</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TipsUntukKamuSteps.userSeeTheArticleRegardingTheTips()</td>
+              <td>2</td>
+              <td class="duration" data-value="287500000">0.287</td>
+              <td class="duration" data-value="287500000">0.438</td>
+              <td class="duration" data-value="575000000">0.575</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.compareTopReksadanaAPIResultsWithTheUI()</td>
+              <td>1</td>
+              <td class="duration" data-value="6493000000">6.493</td>
+              <td class="duration" data-value="6493000000">6.493</td>
+              <td class="duration" data-value="6493000000">6.493</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayAlokasiAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="204400000">0.204</td>
+              <td class="duration" data-value="204400000">0.225</td>
+              <td class="duration" data-value="1022000000">1.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayNameAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="2081200000">2.081</td>
+              <td class="duration" data-value="2081200000">2.089</td>
+              <td class="duration" data-value="10406000000">10.406</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayPortfolioAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="481400000">0.481</td>
+              <td class="duration" data-value="481400000">0.498</td>
+              <td class="duration" data-value="2407000000">2.407</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayProspectusAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="191600000">0.191</td>
+              <td class="duration" data-value="191600000">0.194</td>
+              <td class="duration" data-value="958000000">0.958</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayReksaValueAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="328200000">0.328</td>
+              <td class="duration" data-value="328200000">0.341</td>
+              <td class="duration" data-value="1641000000">1.641</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplaySummaryAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="507600000">0.507</td>
+              <td class="duration" data-value="507600000">0.541</td>
+              <td class="duration" data-value="2538000000">2.538</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.sucessfullyDisplayTopHoldingsAccordingToAPIResults()</td>
+              <td>5</td>
+              <td class="duration" data-value="366400000">0.366</td>
+              <td class="duration" data-value="366400000">0.423</td>
+              <td class="duration" data-value="1832000000">1.832</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.userCheckDetailsOfReksadanaAttempt(int)</td>
+              <td>5</td>
+              <td class="duration" data-value="2350000000">2.350</td>
+              <td class="duration" data-value="2350000000">2.545</td>
+              <td class="duration" data-value="11750000000">11.750</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopReksaDanaPilihanSteps.userClickTopReksadana()</td>
+              <td>6</td>
+              <td class="duration" data-value="863333333">0.863</td>
+              <td class="duration" data-value="863333333">1.482</td>
+              <td class="duration" data-value="5180000000">5.180</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopupSteps.userClickPortInv()</td>
+              <td>9</td>
+              <td class="duration" data-value="1951666666">1.951</td>
+              <td class="duration" data-value="1951666666">3.033</td>
+              <td class="duration" data-value="17565000000">17.565</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopupSteps.userClickTopUpProtofolioOnHomePage(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="6541500000">6.541</td>
+              <td class="duration" data-value="6541500000">6.722</td>
+              <td class="duration" data-value="26166000000">26.166</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TopupSteps.userClickTopup()</td>
+              <td>8</td>
+              <td class="duration" data-value="501125000">0.501</td>
+              <td class="duration" data-value="501125000">0.686</td>
+              <td class="duration" data-value="4009000000">4.009</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.belumAdaHistoryIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="591000000">0.591</td>
+              <td class="duration" data-value="591000000">0.591</td>
+              <td class="duration" data-value="591000000">0.591</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.belumAdaTransaksiIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1511000000">1.511</td>
+              <td class="duration" data-value="1511000000">1.511</td>
+              <td class="duration" data-value="1511000000">1.511</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.userClickButtonTransaksi()</td>
+              <td>6</td>
+              <td class="duration" data-value="7930833333">7.930</td>
+              <td class="duration" data-value="7930833333">8.308</td>
+              <td class="duration" data-value="47585000000">47.585</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.userClickHistoryTab()</td>
+              <td>4</td>
+              <td class="duration" data-value="1560750000">1.560</td>
+              <td class="duration" data-value="1560750000">1.946</td>
+              <td class="duration" data-value="6243000000">6.243</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.userInsertPhoneNumberThatHaveTransaksi()</td>
+              <td>2</td>
+              <td class="duration" data-value="1922000000">1.922</td>
+              <td class="duration" data-value="1922000000">1.972</td>
+              <td class="duration" data-value="3844000000">3.844</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.userSeeOneOrSomeHistoryIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="818000000">0.818</td>
+              <td class="duration" data-value="818000000">0.818</td>
+              <td class="duration" data-value="818000000">0.818</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TransaksiSteps.userSeeOneOrSomeTransaksiIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="15115000000">15.115</td>
+              <td class="duration" data-value="15115000000">15.115</td>
+              <td class="duration" data-value="15115000000">15.115</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayApaItuBibit()</td>
+              <td>1</td>
+              <td class="duration" data-value="1848000000">1.848</td>
+              <td class="duration" data-value="1848000000">1.848</td>
+              <td class="duration" data-value="1848000000">1.848</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayApaItuReksadana()</td>
+              <td>1</td>
+              <td class="duration" data-value="1267000000">1.267</td>
+              <td class="duration" data-value="1267000000">1.267</td>
+              <td class="duration" data-value="1267000000">1.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayCobaDariPalingAman()</td>
+              <td>1</td>
+              <td class="duration" data-value="1331000000">1.331</td>
+              <td class="duration" data-value="1331000000">1.331</td>
+              <td class="duration" data-value="1331000000">1.331</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayIkutRekomendasiRobo()</td>
+              <td>1</td>
+              <td class="duration" data-value="1843000000">1.843</td>
+              <td class="duration" data-value="1843000000">1.843</td>
+              <td class="duration" data-value="1843000000">1.843</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayKeungulanBibit()</td>
+              <td>1</td>
+              <td class="duration" data-value="2076000000">2.076</td>
+              <td class="duration" data-value="2076000000">2.076</td>
+              <td class="duration" data-value="2076000000">2.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayTipsCaraQuiz()</td>
+              <td>1</td>
+              <td class="duration" data-value="1393000000">1.393</td>
+              <td class="duration" data-value="1393000000">1.393</td>
+              <td class="duration" data-value="1393000000">1.393</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayTipsCaraTransaksi()</td>
+              <td>1</td>
+              <td class="duration" data-value="1672000000">1.672</td>
+              <td class="duration" data-value="1672000000">1.672</td>
+              <td class="duration" data-value="1672000000">1.672</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayTipsCaraVideoPerkenalan()</td>
+              <td>1</td>
+              <td class="duration" data-value="1452000000">1.452</td>
+              <td class="duration" data-value="1452000000">1.452</td>
+              <td class="duration" data-value="1452000000">1.452</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.displayTipsInvestasi()</td>
+              <td>1</td>
+              <td class="duration" data-value="1459000000">1.459</td>
+              <td class="duration" data-value="1459000000">1.459</td>
+              <td class="duration" data-value="1459000000">1.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickApaItuBibit()</td>
+              <td>1</td>
+              <td class="duration" data-value="3850000000">3.850</td>
+              <td class="duration" data-value="3850000000">3.850</td>
+              <td class="duration" data-value="3850000000">3.850</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickApaItuReksadana()</td>
+              <td>1</td>
+              <td class="duration" data-value="3819000000">3.819</td>
+              <td class="duration" data-value="3819000000">3.819</td>
+              <td class="duration" data-value="3819000000">3.819</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickBelajarDulu()</td>
+              <td>7</td>
+              <td class="duration" data-value="4606428571">4.606</td>
+              <td class="duration" data-value="4606428571">5.245</td>
+              <td class="duration" data-value="32245000000">32.245</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickCaraQuiz()</td>
+              <td>1</td>
+              <td class="duration" data-value="3466000000">3.466</td>
+              <td class="duration" data-value="3466000000">3.466</td>
+              <td class="duration" data-value="3466000000">3.466</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickCaraTransaksi()</td>
+              <td>1</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickCaraVideoPerkenalan()</td>
+              <td>1</td>
+              <td class="duration" data-value="2908000000">2.908</td>
+              <td class="duration" data-value="2908000000">2.908</td>
+              <td class="duration" data-value="2908000000">2.908</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickCobaDariPalingAman()</td>
+              <td>1</td>
+              <td class="duration" data-value="3101000000">3.101</td>
+              <td class="duration" data-value="3101000000">3.101</td>
+              <td class="duration" data-value="3101000000">3.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickIkutRekomendasiRobo()</td>
+              <td>1</td>
+              <td class="duration" data-value="3660000000">3.660</td>
+              <td class="duration" data-value="3660000000">3.660</td>
+              <td class="duration" data-value="3660000000">3.660</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickKeungulanBibit()</td>
+              <td>1</td>
+              <td class="duration" data-value="3340000000">3.340</td>
+              <td class="duration" data-value="3340000000">3.340</td>
+              <td class="duration" data-value="3340000000">3.340</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickLangsungPraktek()</td>
+              <td>2</td>
+              <td class="duration" data-value="5475500000">5.475</td>
+              <td class="duration" data-value="5475500000">6.248</td>
+              <td class="duration" data-value="10951000000">10.951</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickTipsInvestasi()</td>
+              <td>1</td>
+              <td class="duration" data-value="3904000000">3.904</td>
+              <td class="duration" data-value="3904000000">3.904</td>
+              <td class="duration" data-value="3904000000">3.904</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.TutorialInvestasiSteps.userClickTutorialInvestasiSemangatAyoMulai()</td>
+              <td>9</td>
+              <td class="duration" data-value="7911000000">7.911</td>
+              <td class="duration" data-value="7911000000">8.323</td>
+              <td class="duration" data-value="71199000000">1:11.199</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.UbahResikoPortofolioSteps.displayPortofolioChangedToKonservatif()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.UbahResikoPortofolioSteps.displayPortofolioChangedToModerat()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.UbahResikoPortofolioSteps.userClickTheDecreaseButtonUntilPortofolioShowPortofolioKonservatif()</td>
+              <td>1</td>
+              <td class="duration" data-value="1458000000">1.458</td>
+              <td class="duration" data-value="1458000000">1.458</td>
+              <td class="duration" data-value="1458000000">1.458</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.UbahResikoPortofolioSteps.userClickTheDecreaseButtonUntilPortofolioShowPortofolioModerat()</td>
+              <td>1</td>
+              <td class="duration" data-value="2671000000">2.671</td>
+              <td class="duration" data-value="2671000000">2.671</td>
+              <td class="duration" data-value="2671000000">2.671</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">demo.steps_definition.UbahResikoPortofolioSteps.userClickUbahInThePortofolioComponentAtTheMainPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="9847000000">9.847</td>
+              <td class="duration" data-value="9847000000">10.178</td>
+              <td class="duration" data-value="19694000000">19.694</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>216</td>
+            <td>1652</td>
+            <td class="duration">4.275</td>
+            <td class="duration">35:49.168</td>
+            <td class="duration">1:57:43.332</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
